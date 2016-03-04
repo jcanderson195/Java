@@ -4,6 +4,8 @@ public class myJavastory {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		time twoSec = new time();
+		
 		boolean run = true;
 		
 		Scanner scanners = new Scanner(System.in); 
@@ -19,14 +21,12 @@ public class myJavastory {
 			System.out.println("Why not, adventures are fun?");
 		}else{
 			System.out.println("Don't waste my time! I have a story to tell!");
-			try {
-				Thread.sleep(2000);
-			} catch(InterruptedException ex){
-				Thread.currentThread().interrupt();
-				run = false;
-			}
+			
+			twoSec.twoSeconds();
 			
 		}}
+		
+		twoSec.twoSeconds();
 		
 		Scanner character = new Scanner(System.in);
 		while (run){
@@ -45,14 +45,12 @@ public class myJavastory {
 			break;
 		}else{
 			System.out.println("Don't waste me time! I have a story to tell!");
-			try {
-				Thread.sleep(2000);
-			} catch(InterruptedException ex){
-				Thread.currentThread().interrupt();
-				run = false;
-			}
+			
+			twoSec.twoSeconds();
 			
 		}}
+		
+		twoSec.twoSeconds();
 		
 		Scanner ability = new Scanner(System.in);
 		while (run){
@@ -71,14 +69,12 @@ public class myJavastory {
 			break;
 		}else{
 			System.out.println("Don't waste me time! I have a story to tell!");
-			try {
-				Thread.sleep(2000);
-			} catch(InterruptedException ex){
-				Thread.currentThread().interrupt();
-				run = false;
-			}
+			
+			twoSec.twoSeconds();
 			
 		}}
+		
+		twoSec.twoSeconds();
 		
 		Scanner location = new Scanner(System.in);
 		while (run){
@@ -97,52 +93,23 @@ public class myJavastory {
 			break;
 		}else{
 			System.out.println("Don't waste me time! I have a story to tell!");
-			try {
-				Thread.sleep(2000);
-			} catch(InterruptedException ex){
-				Thread.currentThread().interrupt();
-				run = false;
-			}
+			
+			twoSec.twoSeconds();
 			
 		}}
 		
-		Scanner in = new Scanner(System.in);
-        // print menu
-        for (int i = 1; i <= 2; i++){
-              System.out.println(i + ". Continue Story");
-        System.out.println("2. Restart");
+		twoSec.twoSeconds();
+		
+		System.out.println("Compiling your story good sir!......");
+		twoSec.twoSeconds();
+		System.out.println("Or are you a woman?......");
+		twoSec.twoSeconds();
+		System.out.println("It doesn't matter at this point. You already in the rabbit hole. Time to continue on your way!");
         
-        System.out.println("0. Quit");
-        // handle user commands
-        boolean quit = false;
-        int menuItem;
-        do {
-              System.out.print("Choose menu item: ");
-              menuItem = in.nextInt();
-              switch (menuItem) {
-              case 1:
-                    System.out.println("Continuing story...");
-                    // do something...
-                    break;
-              case 2:
-                    System.out.println("Restarting...");
-                    // do something...
-                    break;
-              case 0:
-            	  	System.out.println("Quitting...");
-                    quit = true;
-                    break;
-              default:
-                    System.out.println("Invalid choice.");
-                    break;
-              }
-              break;
-              
-        } while (!quit);
-        System.out.println("Bye-bye!");
+        
   }
 	}
-}
+
 
 	
 
