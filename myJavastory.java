@@ -317,11 +317,27 @@ public class myJavastory {
 			result_09.dog9();
 		}
 		
+		tenSec.tenSeconds();
+		
+		Scanner ending = new Scanner(System.in); 
+		while (run){
+		System.out.println("Did you enjoy your story? yes or no?");
+		String answer_6 = scanners.next();
+		
+		if (answer_6.equals("yes")){
+			System.out.println("Alright! I'm happy that you're happy!");
+			break;
+		}
+		else if (answer_6.equals("no")){
+			System.out.println("Why not? It took a lot of effort to create that masterpiece!");
+		}else{
+			System.out.println("Seriously man? You're done! I'm done having my time wasted!");
 		
   }
 	}
 
-
+	}
+}
 	
 
 
